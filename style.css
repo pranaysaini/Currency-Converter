@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    /* background-color: red; */
+    width: 100vw;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1{
+    margin: 23px 0;
+    
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input[type='number'], select, label{
+    font-size: 20px;
+    margin-bottom: 23px;
+    width: 23vw;
+}
+
+.container form label{
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+
+
+
+.btn{
+    
+    width: 144px;
+    padding: 5px 11px;
+    background-color: rgb(224, 170, 224);
+    color: black;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+nav{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(155, 56, 216);
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav a:hover{
+    color:rgb(165, 213, 255);
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    
+}
+nav ul{
+    display: flex;
+}
+
+.output {
+    display: none;
+}
+
+.output table{
+    border: 2px solid black;
+    text-align: center;
+    width: 50vw;
+    font-size: 20px;
+}
+
+
+/* To make responsive */
+
+@media (max-width: 600px) {
+            
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}
